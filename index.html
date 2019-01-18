@@ -10,11 +10,12 @@
 <body>
     <div class="container">
         <div class="nav">
-           <div class="link link1" id="dark1">DARK</div>
-           <div class="link link2" id="light1">LIGHT</div>
-           <div class="link link3" id="all1">ALL widgets</div>
+           <div class="link link1" id="dark1" onclick="loadDarkTheme()">DARK</div>
+           <div class="link link2" id="light1" onclick="loadLightTheme()">LIGHT</div>
+           <div class="link link3" id="all1" onclick="showAllWidget()">ALL widgets</div>
         </div>
-        <h1 id="header">DARK theme widget</h1>
+        <div id="showed">
+            <h1 id="header">DARK theme widget</h1>
         <div class="content-dark">
             <div class="section-1">
                 <iframe src="https://coinpaymentprocessor.org/widgets/?page_id=533" width="300" height="125" marginwidth="0" marginheight="0" scrolling="no"></iframe>
@@ -52,8 +53,10 @@
                 <iframe src="https://coinpaymentprocessor.org/widgets/?page_id=945" width="300" height="125" marginwidth="0" marginheight="0" scrolling="no"></iframe>
             </div>
     </div>
-        <h1 id="light-header">Light theme widget</h1>
-        <div class="content-light">
+</div>
+        <div id="hidden">
+            <h1 id="light-header">Light theme widget</h1>
+        <div id="lightSection" class="content-light">
             <div class="light-section-1">
                 <iframe src="https://coinpaymentprocessor.org/widgets/?page_id=100" width="300" height="125" marginwidth="0" marginheight="0" scrolling="no"></iframe>
                 <iframe src="https://coinpaymentprocessor.org/widgets/?page_id=124" width="300" height="125" marginwidth="0" marginheight="0" scrolling="no"></iframe>
@@ -91,5 +94,7 @@
             </div>
         </div>
     </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
