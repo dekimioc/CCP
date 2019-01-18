@@ -1,0 +1,153 @@
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.nav {
+ font-size: 28px;
+ background-color: silver;
+ padding: 20px 0;
+}
+
+.link {
+    display: inline;
+    padding: 20px 30px;
+    margin: 0 15px;
+}
+
+.link:hover {
+    color:  #7a7a52;
+    background-color:  #e0e0d1;
+    cursor: pointer;
+}
+
+.link:active {
+    background-color:  #e0e0d1;
+}
+
+.content-dark {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 50px;
+}
+
+.section-1 {
+    display: grid;
+}
+.section-2 {
+    display: grid;
+}
+
+.section-3 {
+    display: grid;
+}
+
+.section-4 {
+    display: grid;
+}
+
+.section-5 {
+    display: grid;
+}
+
+.content-light {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+
+.light-section-1 {
+    display: grid;
+}
+
+.light-section-2 {
+    display: grid;
+}
+
+.light-section-3 {
+    display: grid;
+}
+
+.light-section-4 {
+    display: grid;
+}
+
+.light-section-5 {
+    display: grid;
+}
+
+@media (max-width: 1650px) {
+    .content-dark {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .content-light {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 30px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .content-dark {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .content-light {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .content-dark {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .content-light {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .content-dark {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .content-light {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .content-dark {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        margin-bottom: 50px;
+        justify-items: center;
+    }
+
+    .content-light {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        justify-items: center;
+    }
+}
